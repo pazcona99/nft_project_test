@@ -21,17 +21,6 @@
           Cryptocurrency has become a household name and is an evolving technology that will only become more prevalent in digital finance. Using machine learning, the attributes of various NFT collections will be utilized to predict pricing and other analytics.
         </p>
       </div>
-
-      <div class="row link-row">
-        <div class="col-md-2">
-          <h4 style="color: #4a235a"><b>Test Subject ID No.:</b></h4>
-          <!-- <select id="selDataset"></select> -->
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
-          <div class="col-md-12">
-            <div id="bar"></div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>    
   
@@ -39,6 +28,5 @@
 </html>
 
 <script src="{{url_for('static', filename='js/home.js')}}"></script>
-<script src="../static/js/top10_plotly.js"></script>
 
 {% endblock %}
