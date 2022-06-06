@@ -6,5 +6,15 @@
   <h1>NFT UCB Data BootCamp Project</h1>
   <p class="lead"><i>Tracking and Predicting NFT Prices</i></p>
 </div>
+
+<div class="col-md-2">
+  <h4 style="color: #4a235a"><b>Test Subject ID No.:</b></h4>
+  <!-- <select id="selDataset"></select> -->
+  <select id="selDataset" onchange="optionChanged(this.value)"></select>
+  <div class="col-md-12">
+    <div id="bar"></div>
+  </div>
+</div>
+
 <script src="{{url_for('static', filename='js/home.js')}}"></script>
 {% endblock %}
