@@ -16,6 +16,10 @@ def home():
 def about():
     return render_template('about.html')
 
+@app.route("/pandas")
+def pandas():
+    return render_template("pandas.html")
+
 
 # Reroute all errors to 404
 @app.errorhandler(404)

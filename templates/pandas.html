@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block content %}
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row header-row r1">
+                    <h1 class="display-1 text-center">Almost Famous Pandas</h1>
+                    <p class="lead text-center">Displays the top ten Pandas according to their Solana pricing </p> 
+                </div>
+                <div class="row link-row justify-content-center">
+                    <h4 style="color: #4a235a"><b>Collection Selection:</b></h4>
+                    <!-- <select id="selDataset"></select> -->
+                    <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                </div>
+                <div class="row link-row justify-content-center">
+                    <div class="col-md-12">
+                        <div id="bar"></div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../static/js/top10_plotly.js"></script>
+{% endblock %}
