@@ -10,6 +10,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{{url_for('static', filename='css/base.css')}}" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .column {
+      float: left;
+      width: 25%;
+      padding: 5px;
+    }
+    
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    </style>
   <title>Home</title>
 </head>
 <body>
@@ -23,7 +41,18 @@
       </div>
 
       <div class = "row">
-        <img src = "https://bafybeihxw53yydo5cwxaehjwqrjkwymdyhuw7dwgkz4aupmfupe3f4ykya.ipfs.dweb.link/6639.png?ext=png" alt = "almost_famous_pandas_6640" style="width:48px;height:48px;">
+        <div class = "column">
+          <img src = "https://bafybeihxw53yydo5cwxaehjwqrjkwymdyhuw7dwgkz4aupmfupe3f4ykya.ipfs.dweb.link/6639.png?ext=png" alt = "almost_famous_pandas_6640" style="width:300px;height:300px;">
+        </div>
+        <div class="column">
+          <img src="https://www.arweave.net/oWaoGB2YTOfCLAOCdewMlJQGYJ4hkjPaENBub47Awvs?ext=jpeg" alt="galactic_gecko_196" style="width:300px;height:300px;">
+        </div>
+        <div class="column">
+          <img src="https://bafybeihr7vi77syiup5o4avvzemhlp4v4nplpc23haderjcjkkzgah2a5u.ipfs.dweb.link/0.gif?ext=gif" alt="magic_ticket_normie" style="width:300px;height:300px;">
+        </div>
+        <div class="column">
+          <img src="https://monkelabs.nyc3.digitaloceanspaces.com/labmonke2/images/8f537fd9aebe9b33da17b6cd27a08f59.png" alt="Monke_5463" style="width:300px;height:300px;">
+        </div>
       </div>
 
     </div>
