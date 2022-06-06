@@ -46,14 +46,6 @@
     <main role="main" class="container">
         <!-- Unique Content -->
         {% block content %} {% endblock %}
-        <div class="col-md-2">
-            <h4 style="color: #4a235a"><b>Test Subject ID No.:</b></h4>
-            <!-- <select id="selDataset"></select> -->
-            <select id="selDataset" onchange="optionChanged(this.value)"></select>
-            <div class="col-md-12">
-              <div id="bar"></div>
-            </div>
-          </div>
         <!-- End Unique Content -->
       </main>
       <!-- Bootstrap core JavaScript
@@ -72,6 +64,6 @@
         referrerpolicy="no-referrer"
       ></script>
       <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-      <script src="top10_plotly.js"></script>
+      <script src="{{url_for('static', filename = 'js/top10_plotly.js')}}"></script>
 </body>
 </html>

@@ -1,11 +1,44 @@
 {% extends "base.html" %}
 {% set active_page = "Home" %}
 {% block content %}
-<link rel="stylesheet" href="{{url_for('static', filename='css/base.css')}}" />
-<div style='margin-top: 30px; text-align: center;'>
-  <h1>NFT UCB Data BootCamp Project</h1>
-  <p class="lead"><i>Tracking and Predicting NFT Prices</i></p>
-</div>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/base.css')}}" />
+  <title>Home</title>
+</head>
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="row header-row r1">
+        <h1 class="display-1 text-center">NFT Price Prediction Using Machine Learning</h1>
+        <p class="lead text-center">
+          Cryptocurrency has become a household name and is an evolving technology that will only become more prevalent in digital finance. Using machine learning, the attributes of various NFT collections will be utilized to predict pricing and other analytics.
+        </p>
+      </div>
+
+      <div class="row link-row">
+        <div class="col-md-2">
+          <h4 style="color: #4a235a"><b>Test Subject ID No.:</b></h4>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          <div class="col-md-12">
+            <div id="bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>    
+  
+</body>
+</html>
 
 <script src="{{url_for('static', filename='js/home.js')}}"></script>
+<script src="../static/js/top10_plotly.js"></script>
+
 {% endblock %}
