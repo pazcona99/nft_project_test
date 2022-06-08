@@ -37,11 +37,18 @@ function buildCharts(collection, url) {
       var barLayout = {
         title: {
           text: "Top 10 NFT",
-          font: { color: '#8fd420 ', size: 18 }
+          font: { color: '#8fd420 ' },
+          fontSize: 30
         },
         xaxis: {
           title: {
             text: 'Solana (1 Sol = 38.90 USD on 6/4/2022)',
+            font: { color: '#8fd420 ' }
+          },
+        },
+        yaxis: {
+          title: {
+            text: 'NFT Title',
             font: { color: '#8fd420 ' }
           },
         },
