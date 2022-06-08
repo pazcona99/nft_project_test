@@ -127,8 +127,8 @@ function buildCharts(collection, url) {
           color: '#8fd420'
         } 
     },
-      plot_bgcolor: 'rgba(10,10,10,0.5)',
-      paper_bgcolor: 'rgba(10,10,10,0.5)'
+      plot_bgcolor: 'rgba(10,10,10,0.1)',
+      paper_bgcolor: 'rgba(10,10,10,0.1)'
     };
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout);
