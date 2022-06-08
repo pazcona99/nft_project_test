@@ -5,7 +5,7 @@ function buildCharts(collection, url) {
     d3.json(url).then(function (data) {
       const nft_title = data.map((obj) => {
         return obj.title
-      }).style("fill", "#8fd420 ");
+      });
   
       const nft_price = data.map((obj) => {
         return obj.price
@@ -45,6 +45,13 @@ function buildCharts(collection, url) {
             text: 'Solana (1 Sol = 38.90 USD on 6/4/2022)',
             font: { color: '#8fd420 ' }
           },
+        },
+        yaxis: {
+            tickcolor: '#8fd420', 
+            automargin: true,    
+            tickfont: {
+              color: '#8fd420'
+            } 
         },
         plot_bgcolor: 'rgba(0,0,0,0)',
         paper_bgcolor: 'rgba(0,0,0,0)'
