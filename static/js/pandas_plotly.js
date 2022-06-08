@@ -42,7 +42,7 @@ function buildCharts(collection, url) {
         xaxis: {
           title: {
             text: 'Solana (1 Sol = 38.90 USD on 6/4/2022)',
-            font: { color: '#4A235A ' }
+            font: { color: '#8fd420' }
           },
         },
         plot_bgcolor: 'rgba(0,0,0,0)',
