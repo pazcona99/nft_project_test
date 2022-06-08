@@ -112,16 +112,23 @@ function buildCharts(collection, url) {
     var barLayout = {
       title: {
         text: "Top 10 NFT",
-        font: { color: '#4A235A ' }
+        font: { color: '#8fd420 ' }
       },
       xaxis: {
         title: {
           text: 'Solana (1 Sol = 38.90 USD on 6/4/2022)',
-          font: { color: '#4A235A ' }
+          font: { color: '#8fd420 ' }
         },
       },
-      plot_bgcolor: 'rgba(0,0,0,0)',
-      paper_bgcolor: 'rgba(0,0,0,0)'
+      yaxis: {
+        tickcolor: '#8fd420', 
+        automargin: true,    
+        tickfont: {
+          color: '#8fd420'
+        } 
+    },
+      plot_bgcolor: 'rgba(10,10,10,10)',
+      paper_bgcolor: 'rgba(10,10,10,10)'
     };
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout);
